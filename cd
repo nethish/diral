@@ -1,15 +1,16 @@
 #! /bin/bash
 
 function cd() {
-  z $@
-  echo $(diral)
-  source <(diral)
+  if command -v z &> /dev/null; then
+    # Use zoxide if it exists
+    z $@
+  else
+    # Default to cd
+    cd $@
+  fi
+
+  if command -v diral &> /dev/null; then
+    source <(diral)
+  fi
 }
 
-
-
-# if [[ $# -gt 0 ]]; then
-#   diral_core "$@"
-# else
-#   diral_core
-# fi
