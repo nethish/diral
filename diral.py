@@ -39,6 +39,7 @@ parser.add_argument('-d', '--delete', help="Delete Alias")
 
 args = parser.parse_args()
 # print(args)
+# print('Coward', os.getcwd())
 
 def create_if_not_exists():
     os.makedirs(DIR, exist_ok = True)

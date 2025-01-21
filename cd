@@ -1,0 +1,15 @@
+#! /bin/bash
+
+function cd() {
+  z $@
+  echo $(diral)
+  source <(diral)
+}
+
+
+
+# if [[ $# -gt 0 ]]; then
+#   diral_core "$@"
+# else
+#   diral_core
+# fi
