@@ -8,3 +8,13 @@ saila.py a go run main.go # This saves go run main.go in the alias a
 saila.py -d a # Deletes the alias
 saila.py # Lists the aliases specific to that directory
 ```
+# Installation
+
+```
+git clone https://github.com/nethish/saila
+cd saila
+
+./install.sh
+```
+
+Restart your terminal or source your .zshrc or .bashrc file!
