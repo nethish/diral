@@ -1,5 +1,6 @@
 mkdir -p ~/.local/bin/
-cp ./diral.py ~/.local/bin/diral
+chmod +x ./saila.py
+cp ./saila.py ~/.local/bin/saila
 
 if [[ ":$PATH:" != *"/.local/bin"* ]]; then
   echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc

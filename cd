@@ -1,5 +1,3 @@
-#! /bin/bash
-
 function cd() {
   if command -v z &> /dev/null; then
     # Use zoxide if it exists
@@ -9,8 +7,8 @@ function cd() {
     cd $@
   fi
 
-  if command -v diral &> /dev/null; then
-    source <(diral)
+  if command -v saila &> /dev/null; then
+    source <(saila)
   fi
 }
 
