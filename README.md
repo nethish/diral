@@ -5,7 +5,9 @@ This tool saves your aliases by directory. I'll have specific alias for each of 
 
 ```
 saila.py a go run main.go # This saves go run main.go in the alias a
+
 saila.py -d a # Deletes the alias
+
 saila.py # Lists the aliases specific to that directory
 ```
 # Installation
