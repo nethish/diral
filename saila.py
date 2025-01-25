@@ -90,4 +90,3 @@ if args.alias and args.command:
     save()
 else:
     load()
-
